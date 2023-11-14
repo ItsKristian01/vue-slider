@@ -31,7 +31,7 @@
                 v-for="(element, index) in slides"
                 :class="activeIndex === index ? 'active' : ''"
                 class="thumb"
-                @click="indexCounter = index"
+                @click="activeIndex = index"
               >
                 <img :src="element.image" alt="" />
               </div>
